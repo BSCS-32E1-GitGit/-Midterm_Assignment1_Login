@@ -54,4 +54,6 @@ namespace Midterm_Assignment1_Login.Controllers
             return RedirectToAction("Login");
         }
     }
+
+
 }
