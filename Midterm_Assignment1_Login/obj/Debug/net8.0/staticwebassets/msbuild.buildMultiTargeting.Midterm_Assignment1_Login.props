@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Midterm_Assignment1_Login.props" />
+</Project>
