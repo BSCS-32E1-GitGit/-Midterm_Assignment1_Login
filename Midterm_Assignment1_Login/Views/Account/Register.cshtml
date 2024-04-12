@@ -1,15 +1,23 @@
 ﻿@model Midterm_Assignment1_Login.Models.User
-
-@using (Html.BeginForm("Register", "Account", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
-    <div>
-        @Html.LabelFor(model => model.Username)
-        @Html.TextBoxFor(model => model.Username)
+<link href="~/css/Register.css" rel="stylesheet" />
+<div class="container">
+    <div class="main">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div>
+                @Html.LabelFor(model => model.Username)
+                @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Password)
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.LabelFor(model => model.ConfirmPassword)
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+            </div>
+            <button type="submit">Register</button>
+        }
     </div>
-    <div>
-        @Html.LabelFor(model => model.Password)
-        @Html.PasswordFor(model => model.Password)
-    </div>
-    <button type="submit">Register</button>
-}
+</div>

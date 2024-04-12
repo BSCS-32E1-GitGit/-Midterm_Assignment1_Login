@@ -44,6 +44,12 @@ namespace Midterm_Assignment1_Login.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Register(User model)
         {
+            if (model.Password != model.ConfirmPassword)
+            {
+                ModelState.AddModelError("", "The password and confirmation password do not match.");
+                return View(model);
+            }
+
             users.Add(model);
             return RedirectToAction("Login");
         }
