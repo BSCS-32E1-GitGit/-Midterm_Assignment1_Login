@@ -1,5 +1,16 @@
 ﻿@model Midterm_Assignment1_Login.Models.User
-<link href="~/css/Register.css" rel="stylesheet" />
+<link href="~/css/register.css" rel="stylesheet" />
+<script>
+    function togglePasswordVisibility(elementId) {
+        var x = document.getElementById(elementId);
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
 <div class="container">
     <div class="main">
         @using (Html.BeginForm("Register", "Account", FormMethod.Post))
@@ -8,16 +19,27 @@
             <div>
                 @Html.LabelFor(model => model.Username)
                 @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+                <div class="validation-error">@Html.ValidationMessageFor(model => model.Username)</div>
             </div>
             <div>
                 @Html.LabelFor(model => model.Password)
-                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control", id = "passwordInput" })
+                <input type="checkbox" onclick="togglePasswordVisibility('passwordInput')"> Show Password
+                <div class="validation-error">@Html.ValidationMessageFor(model => model.Password)</div>
             </div>
             <div>
                 @Html.LabelFor(model => model.ConfirmPassword)
-                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", id = "confirmPasswordInput" })
+                <input type="checkbox" onclick="togglePasswordVisibility('confirmPasswordInput')"> Show Password
+                <div class="validation-error">@Html.ValidationMessageFor(model => model.ConfirmPassword)</div>
             </div>
             <button type="submit">Register</button>
         }
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

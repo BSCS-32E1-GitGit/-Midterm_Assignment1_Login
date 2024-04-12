@@ -62,3 +62,10 @@ button {
     button:hover {
         background-color: #6d44b8;
     }
+
+.validation-error {
+    font-size: smaller;
+    color: red;
+    margin-top: 5px; /* Adjust this value to increase or decrease the padding */
+    margin-bottom: 5px;
+}
