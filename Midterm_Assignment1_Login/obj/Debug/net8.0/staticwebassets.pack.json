@@ -9,12 +9,12 @@
       "PackagePath": "staticwebassets\\css\\Home.css"
     },
     {
-      "Id": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\Register.css",
-      "PackagePath": "staticwebassets\\css\\Register.css"
-    },
-    {
       "Id": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
       "Id": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\site.css",
