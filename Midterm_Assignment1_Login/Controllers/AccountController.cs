@@ -19,6 +19,12 @@ namespace Midterm_Assignment1_Login.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(User model)
         {
+            if (!users.Any())
+            {
+                ModelState.AddModelError("", "No users are registered yet");
+                return View(model);
+            }
+
             var user = users.FirstOrDefault(u => u.Username == model.Username && u.Password == model.Password);
             if (user != null)
             {
@@ -33,7 +39,6 @@ namespace Midterm_Assignment1_Login.Controllers
                 return View(model);
             }
         }
-
         // GET: /Account/Register
         public IActionResult Register()
         {
@@ -42,7 +47,7 @@ namespace Midterm_Assignment1_Login.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Register(User model)
+        public IActionResult Register(Registermodel model)
         {
             if (model.Password != model.ConfirmPassword)
             {
@@ -50,7 +55,18 @@ namespace Midterm_Assignment1_Login.Controllers
                 return View(model);
             }
 
-            users.Add(model);
+            // Convert Registermodel to User
+            User user = new User
+            {
+                // Assuming properties of Registermodel and User are compatible
+                Username = model.Username,
+                Password = model.Password,
+                // Add other properties as needed
+            };
+
+            // Add the converted User object to your users collection
+            users.Add(user);
+
             return RedirectToAction("Login");
         }
     }

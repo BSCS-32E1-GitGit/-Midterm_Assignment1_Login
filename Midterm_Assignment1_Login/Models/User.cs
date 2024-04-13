@@ -4,6 +4,16 @@ namespace Midterm_Assignment1_Login.Models
 {
     public class User
     {
+    
+   
+        public string Username { get; set; }
+        public string Password { get; set; }
+
+   
+    }
+
+    public class Registermodel
+    {
         [Required(ErrorMessage = "Username is required")]
         [MinLength(6, ErrorMessage = "Username must be at least 6 characters long")]
         [RegularExpression(@"^\S*$", ErrorMessage = "Username cannot contain spaces")]
