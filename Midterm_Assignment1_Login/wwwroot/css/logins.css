@@ -66,6 +66,13 @@ button {
     color: red;
     font-size: 14px;
     margin-top: 5px; /* Adjust as needed */
+    margin-bottom: 5px; /* Add colon */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; /* Adjust as needed */
 }
 
 .validation-summary-errors {
@@ -82,4 +89,3 @@ button {
     .validation-summary-errors li {
         margin-bottom: 5px; /* Adjust as needed */
     }
-
