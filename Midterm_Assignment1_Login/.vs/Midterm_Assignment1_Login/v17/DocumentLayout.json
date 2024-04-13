@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\views\\account\\viewaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:views\\account\\viewaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\wwwroot\\css\\view.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:wwwroot\\css\\view.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\wwwroot\\css\\logins.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -19,24 +19,16 @@
       "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|c:\\users\\jonas\\documents\\github\\-midterm_assignment1_login\\midterm_assignment1_login\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D386C813-3309-434A-9D12-87D164A4A859}|Midterm_Assignment1_Login.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -56,97 +48,10 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\logins.css",
               "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\logins.css",
               "RelativeToolTip": "wwwroot\\css\\logins.css",
-              "ViewState": "AQIAACcAAAAAAAAAAAAmwEcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-12T16:17:42.452Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T13:52:35.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Home.css",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\Home.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\Home.css",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\Home.css",
-              "RelativeToolTip": "wwwroot\\css\\Home.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-12T17:06:51.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T16:55:47.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwDoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T16:55:20.603Z",
+              "WhenOpened": "2024-04-13T22:25:19.084Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T16:54:28.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "register.css",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\register.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\register.css",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\register.css",
-              "RelativeToolTip": "wwwroot\\css\\register.css",
-              "ViewState": "AQIAABsAAAAAAAAAAAAiwDQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-12T16:52:09.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T16:51:51.751Z"
             },
             {
               "$type": "Document",
@@ -156,9 +61,74 @@
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T15:58:14.196Z",
+              "WhenOpened": "2024-04-13T22:23:01.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Account\\ViewAccount.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ViewAccount.cshtml",
+              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Views\\Account\\ViewAccount.cshtml",
+              "RelativeToolTip": "Views\\Account\\ViewAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T22:22:50.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "View.css",
+              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\View.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\View.css",
+              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\View.css",
+              "RelativeToolTip": "wwwroot\\css\\View.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-12T17:06:51.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T16:55:47.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAuwDoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T16:55:20.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T16:54:28.807Z",
               "EditorCaption": ""
             }
           ]

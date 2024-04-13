@@ -7,8 +7,12 @@
     <link href="~/css/home.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="text-center">
-        <h1>We GITGIT</h1>
+    <div class="container">
+        <div class="text-center">
+            <h1>We GITGIT</h1>
+            <a href="@Url.Action("ViewAccount", "Account", new { username = User.Identity.Name })" class="btn">View Account</a>
+        </div>
     </div>
+
 </body>
 </html>
