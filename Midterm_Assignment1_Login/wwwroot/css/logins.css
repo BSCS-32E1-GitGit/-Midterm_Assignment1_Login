@@ -61,3 +61,25 @@ button {
     button:hover {
         background-color: #6d44b8;
     }
+
+.text-danger {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; /* Adjust as needed */
+}
+
+.validation-summary-errors {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px; /* Adjust as needed */
+}
+
+    .validation-summary-errors ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .validation-summary-errors li {
+        margin-bottom: 5px; /* Adjust as needed */
+    }
+

@@ -19,12 +19,7 @@ namespace Midterm_Assignment1_Login.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(User model)
         {
-            if (!users.Any())
-            {
-                ModelState.AddModelError("", "No users are registered yet");
-                return View(model);
-            }
-
+           
             var user = users.FirstOrDefault(u => u.Username == model.Username && u.Password == model.Password);
             if (user != null)
             {
