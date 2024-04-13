@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "76m3GUTlTh5eZrYyVjEFLerihD98lgNzZWdzz4JycTQ=",
+  "Hash": "OEt/S2QUozjvL7WPPBNGNbapSk9ahOjfsfhZ43B1K00=",
   "Source": "Midterm_Assignment1_Login",
   "BasePath": "_content/Midterm_Assignment1_Login",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Home.css"
     },
     {
-      "Identity": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\logins.css",
       "SourceId": "Midterm_Assignment1_Login",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\",
       "BasePath": "_content/Midterm_Assignment1_Login",
-      "RelativePath": "css/login.css",
+      "RelativePath": "css/logins.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\login.css"
+      "OriginalItemSpec": "wwwroot\\css\\logins.css"
     },
     {
       "Identity": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\register.css",
