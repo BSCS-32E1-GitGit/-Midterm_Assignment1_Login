@@ -89,3 +89,25 @@ button {
     .validation-summary-errors li {
         margin-bottom: 5px; /* Adjust as needed */
     }
+
+.register-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #573b8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px; /* Adjust as needed */
+    transition: background-color 0.3s ease;
+}
+
+    .register-button:hover {
+        background-color: #6d44b8;
+        color: white;
+    }
