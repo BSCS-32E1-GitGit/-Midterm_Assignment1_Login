@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Midterm_Assignment1_Login.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Midterm_Assignment1_Login.Controllers
 {
@@ -30,8 +31,9 @@ namespace Midterm_Assignment1_Login.Controllers
                 if (user.Password == model.Password)
                 {
                     // Successful login
-                    // Redirect to account information view after successful login
-                    return RedirectToAction("ViewAccount", new { username = model.Username });
+                    // Redirect to home after successful login
+                    loginAttempts.Remove(model.Username); // Reset login attempts
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -105,21 +107,6 @@ namespace Midterm_Assignment1_Login.Controllers
             users.Add(user.Username, user);
 
             return RedirectToAction("Login");
-        }
-
-        // GET: /Account/ViewAccount
-        public IActionResult ViewAccount(string username, string password)
-        {
-            if (username != null && users.ContainsKey(username) && users[username].Password == password)
-            {
-                var user = users[username];
-                return View(user);
-            }
-            else
-            {
-                // User not found or username/password is incorrect
-                return NotFound();
-            }
         }
     }
 }
