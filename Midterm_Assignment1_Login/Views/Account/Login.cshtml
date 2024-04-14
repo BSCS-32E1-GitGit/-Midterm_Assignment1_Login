@@ -1,34 +1,43 @@
 ﻿@model YourApp.Models.LoginModel
-
+<link href="~/css/Login.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 @{
     ViewBag.Title = "Login";
-    int remainingAttempts = ViewBag.RemainingAttempts != null ? (int)ViewBag.RemainingAttempts : 0;
-    bool disableLoginButton = remainingAttempts == 0;
 }
 
 <h2>Login</h2>
 
 @using (Html.BeginForm())
 {
-    @Html.ValidationSummary(true)
+    @Html.ValidationSummary(true, "", new { @class = "error-summary" }) <!-- Added class to ValidationSummary -->
 
     <div class="form-group">
         @Html.LabelFor(model => model.Username)
-        @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
-        @Html.ValidationMessageFor(model => model.Username)
+        @Html.TextBoxFor(model => model.Username, new { @class = "form-control", id = "username" })
+        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "error-message" }) <!-- Added class to ValidationMessageFor -->
     </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Password)
-        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
-        @Html.ValidationMessageFor(model => model.Password)
+        @Html.PasswordFor(model => model.Password, new { @class = "form-control", id = "password" })
+        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "error-message" }) <!-- Added class to ValidationMessageFor -->
     </div>
+    <br />
 
-    <button type="submit" class="btn btn-primary" @(disableLoginButton ? "disabled" : "")>Login</button>
-    <a href="@Url.Action("Register", "Account")" class="btn btn-primary">Register</a>
+    <button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+    <div class="register-container">
+        <!-- Added container for register button -->
+        <a href="@Url.Action("Register", "Account")" class="btn btn-primary">Register</a>
+    </div>
 }
 
-@if (disableLoginButton)
-{
-   @*  <p>You have exceeded the maximum number of login attempts. Please <a href="@Url.Action("Register", "Account")">register</a>.</p> *@
-}
+<script>
+    $(document).ready(function() {
+        var remainingAttempts = @(ViewBag.RemainingAttempts);
+        if (remainingAttempts <= 0) {
+            $('#username').prop('disabled', true);
+            $('#password').prop('disabled', true);
+            $('#loginButton').prop('disabled', true);
+        }
+    });
+</script>
