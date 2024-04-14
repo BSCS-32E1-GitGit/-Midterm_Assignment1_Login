@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T7MvZah1C3/wNUzuVZJwg8lQj29JF+Azz1t+bLx76treMaE9/yT7vL+1Jyf8nsbnNI8XlQUUwnyb9twQ37D+jw==",
+  "dgSpecHash": "nMmOv41JXSwUU/NlpA5yvxJVlOuJC+C+fnLXl+qxeeGEBjykFDAv6MLy3dpy7Nmt08HF/hJSLZGReCa0B/j2mA==",
   "success": true,
   "projectFilePath": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\JONAS\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\JONAS\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\JONAS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\JONAS\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

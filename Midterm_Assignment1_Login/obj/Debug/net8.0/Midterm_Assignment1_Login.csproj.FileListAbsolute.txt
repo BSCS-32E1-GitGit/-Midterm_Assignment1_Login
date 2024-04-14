@@ -224,3 +224,4 @@ C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_L
 C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_Login\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_Login\obj\Debug\net8.0\scopedcss\bundle\Midterm_Assignment1_Login.styles.css
 C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_Login\obj\Debug\net8.0\scopedcss\projectbundle\Midterm_Assignment1_Login.bundle.scp.css
+C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_Login\bin\Debug\net8.0\BCrypt.Net-Next.dll
