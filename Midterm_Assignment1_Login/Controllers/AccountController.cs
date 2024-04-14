@@ -42,6 +42,11 @@ namespace YourApp.Controllers
         {
             int remainingAttempts = GetRemainingAttempts();
             ViewBag.RemainingAttempts = remainingAttempts;
+
+            // Determine whether to disable the input fields
+            bool disableLoginInput = remainingAttempts == 0;
+            ViewBag.DisableLoginInput = disableLoginInput;
+
             return View();
         }
 
