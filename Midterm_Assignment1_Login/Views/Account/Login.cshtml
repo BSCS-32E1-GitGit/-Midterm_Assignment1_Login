@@ -1,43 +1,34 @@
-﻿@model Midterm_Assignment1_Login.Models.User
-<link href="~/css/logins.css" rel="stylesheet" />
-<div class="container">
-    <div class="main">
-        @using (Html.BeginForm("ViewAccount", "Home", FormMethod.Post))
-        {
-            @Html.AntiForgeryToken()
-            <div>
-                @Html.LabelFor(model => model.Username)
-                @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
-                <div class="error-message">
-                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
-                </div>
-            </div>
-            <div>
-                @Html.LabelFor(model => model.Password)
-                @Html.PasswordFor(model => model.Password, new { @class = "form-control", id = "password-field" })
-                <div class="error-message">
-                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                </div>
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <input type="checkbox" onclick="showPassword()"> Show Password
-            </div>
-            <br />
-            <button type="submit" class="login-button">Login</button>
-            <div class="register-link">
-                <a href="@Url.Action("Register", "Account")" class="register-button">Register</a>
-            </div>
-        }
+﻿@model YourApp.Models.LoginModel
 
+@{
+    ViewBag.Title = "Login";
+    int remainingAttempts = ViewBag.RemainingAttempts != null ? (int)ViewBag.RemainingAttempts : 0;
+    bool disableLoginButton = remainingAttempts == 0;
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Username)
+        @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Username)
     </div>
-</div>
 
-<script>
-    function showPassword() {
-        var passwordField = document.getElementById("password-field");
-        if (passwordField.type === "password") {
-            passwordField.type = "text";
-        } else {
-            passwordField.type = "password";
-        }
-    }
-</script>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password)
+        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Password)
+    </div>
+
+    <button type="submit" class="btn btn-primary" @(disableLoginButton ? "disabled" : "")>Login</button>
+    <a href="@Url.Action("Register", "Account")" class="btn btn-primary">Register</a>
+}
+
+@if (disableLoginButton)
+{
+   @*  <p>You have exceeded the maximum number of login attempts. Please <a href="@Url.Action("Register", "Account")">register</a>.</p> *@
+}

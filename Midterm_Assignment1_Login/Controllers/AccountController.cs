@@ -1,125 +1,131 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Midterm_Assignment1_Login.Models;
+﻿using BCrypt.Net;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using YourApp.Models;
 
-namespace Midterm_Assignment1_Login.Controllers
+namespace YourApp.Controllers
 {
     public class AccountController : Controller
     {
-        private static Dictionary<string, User> users = new Dictionary<string, User>();
-        private static Dictionary<string, int> loginAttempts = new Dictionary<string, int>();
+        private static Dictionary<string, string> users = new Dictionary<string, string>();
+        private const int MaxLoginAttempts = 3;
 
-        // GET: /Account/Login
-        public IActionResult Login()
+        public ActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Login(User model)
+        public ActionResult Register(RegisterModel registerModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(model);
-            }
-
-            if (users.ContainsKey(model.Username))
-            {
-                var user = users[model.Username];
-                if (user.Password == model.Password)
+                if (users.ContainsKey(registerModel.Username))
                 {
-                    // Successful login
-                    // Redirect to account information view after successful login
-                    return RedirectToAction("ViewAccount", new { username = model.Username });
+                    ModelState.AddModelError("Username", "Username is already taken.");
+                    return View(registerModel);
+                }
+
+                // Store username, email, and hashed password in the users dictionary
+                users.Add(registerModel.Username, registerModel.Email);
+                users.Add($"{registerModel.Username}_Password", HashPassword(registerModel.Password));
+
+                // Optionally, you can save the email to a database or another storage mechanism
+
+                return RedirectToAction("Login");
+            }
+            return View(registerModel);
+        }
+
+        public ActionResult Login()
+        {
+            int remainingAttempts = GetRemainingAttempts();
+            ViewBag.RemainingAttempts = remainingAttempts;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginModel loginModel)
+        {
+            if (ModelState.IsValid)
+            {
+                // Check if the user exists and the password is correct
+                if (users.ContainsKey(loginModel.Username) && BCrypt.Net.BCrypt.Verify(loginModel.Password, users[$"{loginModel.Username}_Password"]))
+                {
+                    // Successful login, redirect to the dashboard
+                    ResetLoginAttempts();
+                    return RedirectToAction("Dashboard", new { username = loginModel.Username });
                 }
                 else
                 {
-                    // Invalid credentials
-                    ModelState.AddModelError("", "Invalid username or password");
-                    if (!loginAttempts.ContainsKey(model.Username))
+                    // Invalid username or password
+                    int remainingAttempts = DecrementAndGetRemainingAttempts();
+                    if (remainingAttempts == 0)
                     {
-                        loginAttempts[model.Username] = 1;
+                        ResetLoginAttempts();
+                        ModelState.AddModelError("", "You have exceeded the maximum number of login attempts. Please re-register.");
                     }
                     else
                     {
-                        loginAttempts[model.Username]++;
-                        if (loginAttempts[model.Username] >= 3)
-                        {
-                            ModelState.AddModelError("", "Login attempts exceeded. Please re-register.");
-                            return View(model);
-                        }
-                        else
-                        {
-                            ModelState.AddModelError("", $"{3 - loginAttempts[model.Username]} attempts remaining");
-                        }
+                        ModelState.AddModelError("", $"Invalid account. {remainingAttempts} attempt{(remainingAttempts > 1 ? "s" : "")} remaining.");
                     }
-                    return View(model);
+                    // Pass remaining attempts to the view
+                    ViewBag.RemainingAttempts = remainingAttempts;
+                    return View(loginModel);
                 }
             }
             else
             {
-                // User not found
-                ModelState.AddModelError("", "Invalid account");
-                return View(model);
+                // If the model state is invalid, return to the login view with validation errors
+                return View(loginModel);
             }
         }
 
-        // GET: /Account/Register
-        public IActionResult Register()
+        private void ResetLoginAttempts()
         {
-            return View();
+            HttpContext.Session.SetInt32("LoginAttempts", 0);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Register(Registermodel model)
+        private int DecrementAndGetRemainingAttempts()
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            if (model.Password != model.ConfirmPassword)
-            {
-                ModelState.AddModelError("", "The password and confirmation password do not match.");
-                return View(model);
-            }
-
-            if (users.ContainsKey(model.Username))
-            {
-                ModelState.AddModelError("", "Username already exists. Please choose a different username.");
-                return View(model);
-            }
-
-            // Convert Registermodel to User
-            User user = new User
-            {
-                // Assuming properties of Registermodel and User are compatible
-                Username = model.Username,
-                Password = model.Password,
-                // Add other properties as needed
-            };
-
-            // Add the converted User object to your users collection
-            users.Add(user.Username, user);
-
-            return RedirectToAction("Login");
+            var attempts = HttpContext.Session.GetInt32("LoginAttempts") ?? 0;
+            HttpContext.Session.SetInt32("LoginAttempts", attempts + 1);
+            return MaxLoginAttempts - attempts;
         }
 
-        // GET: /Account/ViewAccount
-        public IActionResult ViewAccount(string username, string password)
+        private int GetRemainingAttempts()
         {
-            if (username != null && users.ContainsKey(username) && users[username].Password == password)
+            var attempts = HttpContext.Session.GetInt32("LoginAttempts") ?? 0;
+            return MaxLoginAttempts - attempts;
+        }
+
+        public ActionResult Dashboard(string username)
+        {
+            // Retrieve user information based on the username
+            if (users.ContainsKey(username))
             {
-                var user = users[username];
-                return View(user);
+                string email = users[username]; // Retrieve the actual email from the dictionary
+                string hashedPassword = users[$"{username}_Password"]; // Retrieve the hashed password
+
+                ViewBag.Username = username;
+                ViewBag.Email = email;
+                ViewBag.HashedPassword = hashedPassword; // Pass the hashed password to the view
             }
             else
             {
-                // User not found or username/password is incorrect
-                return NotFound();
+                // Handle the case where the username is not found
+                ViewBag.Username = "Unknown";
+                ViewBag.Email = "Unknown";
+                ViewBag.HashedPassword = "Unknown";
             }
+            return View();
+        }
+
+        public string HashPassword(string password)
+        {
+            // Generate a bcrypt hash with a cost factor of 12
+            return BCrypt.Net.BCrypt.HashPassword(password, 12);
         }
     }
 }

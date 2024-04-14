@@ -26,16 +26,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\JONAS\Documents\GitHub\-Midterm_Assignment1_Login\Midterm_Assignment1_Login
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/JONAS/Documents/GitHub/-Midterm_Assignment1_Login/Midterm_Assignment1_Login/Views/Account/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/JONAS/Documents/GitHub/-Midterm_Assignment1_Login/Midterm_Assignment1_Login/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JONAS/Documents/GitHub/-Midterm_Assignment1_Login/Midterm_Assignment1_Login/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/JONAS/Documents/GitHub/-Midterm_Assignment1_Login/Midterm_Assignment1_Login/Views/Account/ViewAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWaWV3QWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JONAS/Documents/GitHub/-Midterm_Assignment1_Login/Midterm_Assignment1_Login/Views/Home/Index.cshtml]
