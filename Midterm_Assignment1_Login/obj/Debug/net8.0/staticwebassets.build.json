@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1s/pKqPjsBZsZVB831TaKPGtd/XAQ2fL4VlV7NZfsHM=",
+  "Hash": "VtvP8C9vrLmJNSuDlIdjSuH0ovtTsRod76EdDDf7MPQ=",
   "Source": "Midterm_Assignment1_Login",
   "BasePath": "_content/Midterm_Assignment1_Login",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
+      "Identity": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\Register.css",
+      "SourceId": "Midterm_Assignment1_Login",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\",
+      "BasePath": "_content/Midterm_Assignment1_Login",
+      "RelativePath": "css/Register.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Register.css"
     },
     {
       "Identity": "C:\\Users\\JONAS\\Documents\\GitHub\\-Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\wwwroot\\css\\site.css",
