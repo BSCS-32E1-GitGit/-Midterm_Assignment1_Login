@@ -1,14 +1,9 @@
-﻿<link href="~/css/dashboard.css" rel="stylesheet" />@{
+﻿@{
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="form-container">
-    <h1 class="dashboard-title">Welcome to Your Dashboard, @ViewBag.Username!</h1>
-    <br />
+<h1>Welcome to Your Dashboard, @ViewBag.Username!</h1>
 
-    <p class="dashboard-info" style="color: white; font-size: 20px;">Email Address</p>
-    <p class="dashboard-info">@ViewBag.Email</p>
+<p>Your Email Address: @ViewBag.Email</p>
 
-    <p class="dashboard-info" style="color: white; font-size: 20px;">Hashed Password</p>
-    <p class="dashboard-info">@ViewBag.HashedPassword</p>
-</div>@* ViewBag.HashedPassword *@</p>
+<p>Your Hashed Password: @ViewBag.HashedPassword</p>
