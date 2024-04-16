@@ -1,3 +1,5 @@
+using YourApp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +11,9 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+// Register IUserService and UserService
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
@@ -27,7 +32,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.UseSession(); // Add this line to enable session state management
+// Enable session state management
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
